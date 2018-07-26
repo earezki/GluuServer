@@ -6,9 +6,9 @@ These instructions will allow you to get a gluu server instance running quickly 
 
 ### Prerequisites
 
-Install vagrant software from HashiCorp: https://www.vagrantup.com/downloads.html
-Virtualbox
-Git
+* Install Vagrant software from HashiCorp: https://www.vagrantup.com/downloads.html
+* Install Virtualbox from Oracle: https://www.virtualbox.org/wiki/Downloads
+* Git (obviously)
 
 ### Setup
 
