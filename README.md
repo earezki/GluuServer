@@ -16,7 +16,7 @@ These instructions will allow you to get a gluu server instance running quickly 
 
 Clone the repository to a folder in your machine
 ```
-git clone git@github.com:earezki/gluu-server-box.git
+git clone https://github.com/earezki/gluu-server-box.git
 ```
 
 Download the base box and provision it. It will download the base box and install the Gluu server. This may take a few minutes depending on your internet connection. Next time, it won't download the base box.
