@@ -7,7 +7,7 @@ These instructions will allow you to get a gluu server instance running quickly 
 ### Prerequisites
 
 * 4GB of RAM.
-* 2 cpus.
+* 2 CPUS.
 * Install Vagrant software from HashiCorp: https://www.vagrantup.com/downloads.html
 * Install Virtualbox from Oracle: https://www.virtualbox.org/wiki/Downloads
 * Git (obviously)
@@ -17,11 +17,23 @@ These instructions will allow you to get a gluu server instance running quickly 
 Clone the repository to a folder in your machine
 ```
 git clone https://github.com/earezki/gluu-server-box.git
+cd gluu-server-box
 ```
 
 Download the base box and provision it. It will download the base box and install the Gluu server. This may take a few minutes depending on your internet connection. Next time, it won't download the base box.
 ```
+cd gluu-server-box
 vagrant up
+```
+
+SSH into the virtual machine.
+```
+vagrant ssh
+```
+
+Run in sudo mode.
+```
+$ sudo su
 ```
 
 Start and login to the gluu server
@@ -36,7 +48,9 @@ Run the configuration script: https://gluu.org/docs/ce/3.1.3/installation-guide/
 # ./setup.py
 ```
 
-Add the hostname url to your host file:
+Add the hostname url to your host OS's host file:
+* **C:\Windows\System32\drivers\etc\hosts** on Windows
+* **/etc/hosts** on Ubuntu
 ```
 127.0.0.1 {{hostname}}
 ```
