@@ -1,3 +1,6 @@
+# [Deprecated]
+A new version has come out.
+
 # Gluu server Vagrant box 
 
 ## Getting Started
